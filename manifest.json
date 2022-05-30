@@ -1,0 +1,12 @@
+{
+    "name": "Gitlab GitClone",
+    "description": "Add 'git clone' to clone button",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://gitlab.com/*"],
+            "js": ["script.js"]
+        }
+    ]
+}
