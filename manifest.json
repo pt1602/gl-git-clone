@@ -1,7 +1,7 @@
 {
-    "name": "Gitlab GitClone",
-    "description": "Add 'git clone' to clone button",
-    "version": "1.0",
+    "name": "Gitlab Git Clone",
+    "description": "Adds 'git clone' to the ssh/https clone url, so you simply can copy and paste it into your terminal.",
+    "version": "1.1",
     "manifest_version": 3,
     "content_scripts": [
         {
