@@ -1,12 +1,24 @@
 {
-    "name": "Gitlab Git Clone",
-    "description": "Adds 'git clone' to the ssh/https clone url, so you simply can copy and paste it into your terminal.",
-    "version": "1.1",
-    "manifest_version": 3,
-    "content_scripts": [
-        {
-            "matches": ["https://gitlab.com/*"],
-            "js": ["script.js"]
-        }
-    ]
+  "name": "Gitlab Git Clone",
+  "description": "Adds 'git clone' to the ssh/https clone url, so you simply can copy and paste it into your terminal.",
+  "version": "1.1",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "https://gitlab.com/*"
+      ],
+      "js": [
+        "js/frontend.js"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "assets/icons/gitlab-git-clone-logo16x.png",
+    "48": "assets/icons/gitlab-git-clone-logo48x.png",
+    "128": "assets/icons/gitlab-git-clone-logo.png"
+  },
+  "action": {
+    "default_popup": "default_popup/index.html"
+  }
 }

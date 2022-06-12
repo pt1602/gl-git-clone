@@ -10,7 +10,7 @@
 
 Simple chrome extension, that adds "git clone" before the source. 
 
-![Screenshot Gitlab](readme-ressources/gitlab-git-clone.png "Screenshot Gitlab")
+![Screenshot Gitlab](assets/readme-ressources/gitlab-git-clone.png "Screenshot Gitlab")
 
 ## How to install?
 
