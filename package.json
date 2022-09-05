@@ -1,0 +1,25 @@
+{
+  "name": "gitlab-gitclone",
+  "version": "1.2.0",
+  "description": "Adds 'git clone' to the ssh/https clone url, so you simply can copy and paste it into your terminal.",
+  "main": "./js/frontend.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pt1602/gitlab-git-clone.git"
+  },
+  "keywords": [
+    "gitlab"
+  ],
+  "author": "Philipp Tuchardt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pt1602/gitlab-git-clone/issues"
+  },
+  "homepage": "https://github.com/pt1602/gitlab-git-clone#readme",
+  "devDependencies": {
+    "typescript": "^4.8.2"
+  }
+}
