@@ -8,9 +8,21 @@
 
 # Gitlab "git clone …"
 
-Simple chrome extension, that adds "git clone" before the source. 
+Simple Google Chrome extension, which adds some minor tweaks to make working with Gitlab a little better.
 
-![Screenshot Gitlab](assets/readme-ressources/gitlab-git-clone.png "Screenshot Gitlab")
+---
+
+## Current Features
+
+It adds "git clone" before the repository source.
+
+![Screenshot Git Clone](assets/readme-ressources/gitlab-git-clone.png "Screenshot Git Clone")
+
+and also a _Checkout_ button on the Merge-Request page to copy the branch name plus a _git checkout_ before it.
+
+![Screenshot Merge Request](assets/readme-ressources/gitlab-merge-request.png "Screenshot Merge Request")
+
+---
 
 ## How to install?
 

@@ -4,7 +4,7 @@ let cloneOptionsDropdown = document.querySelectorAll('.clone-options-dropdown > 
 let mobileCloneButtons = document.querySelector('.mobile-git-clone .clone-dropdown-btn');
 const currentPath = window.location.pathname;
 const beforeVal = 'git clone ';
-const copyNameBtnVal = 'Copy branch name';
+const copyNameBtnVal = 'Checkout';
 const copyNameBtnClasses = 'gl-display-none gl-md-display-block btn gl-button btn-default btn-grouped';
 let branchNameEl;
 function modifyMobileCloneButtons() {
@@ -18,10 +18,10 @@ function createCopyBranchNameButton(branchNameEl) {
     cloneBranchNameBtn.innerText = copyNameBtnVal;
     if (branchName) {
         cloneBranchNameBtn.addEventListener('click', () => {
-            navigator.clipboard.writeText(branchName).then(() => {
-                /* success */
+            navigator.clipboard.writeText('git checkout ' + branchName).then(() => {
+                /* success - do nothing */
             }, () => {
-                /* failure */
+                /* failure - do nothing */
             });
         });
     }
