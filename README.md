@@ -18,7 +18,7 @@ It adds "git clone" before the repository source.
 
 ![Screenshot Git Clone](assets/readme-ressources/gitlab-git-clone.png "Screenshot Git Clone")
 
-and also a _Checkout_ button on the Merge-Request page to copy the branch name plus a _git checkout_ before it.
+and also a _Checkout_ button on the Merge-Request page to copy the branch name plus a _git fetch && git checkout_ before it.
 
 ![Screenshot Merge Request](assets/readme-ressources/gitlab-merge-request.png "Screenshot Merge Request")
 
