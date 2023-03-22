@@ -20,7 +20,7 @@ function createCopyBranchNameButton(branchNameEl: HTMLElement) {
 
     if (branchName) {
         cloneBranchNameBtn.addEventListener('click', () => {
-            navigator.clipboard.writeText('git fetch && git checkout ' + branchName).then(
+            navigator.clipboard.writeText('git fetch && git checkout ' + branchName + ' && git pull').then(
                 () => {
                     /* success - do nothing */
                 },
@@ -43,7 +43,6 @@ if (currentPath.includes('merge_requests/')) {
         if (branchNameEl) {
             createCopyBranchNameButton(branchNameEl);
             clearInterval(checkInterval);
-            return;
         }
     }, 300);
 }

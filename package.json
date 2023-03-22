@@ -1,6 +1,6 @@
 {
   "name": "gitlab-gitclone",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Adds 'git clone' to the ssh/https clone url, so you simply can copy and paste it into your terminal.",
   "main": "./js/frontend.js",
   "scripts": {
