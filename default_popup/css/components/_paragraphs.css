@@ -1,0 +1,8 @@
+.paragraph--build-by {
+    margin-bottom: 1rem;
+    line-height: 1.25rem;
+}
+
+.paragraph--contribute, .paragraph--issues {
+    margin: 0.5rem 0;
+}
