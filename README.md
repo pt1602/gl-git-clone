@@ -8,7 +8,7 @@
 
 # Gitlab "git clone …"
 
-Simple Google Chrome extension, which adds some minor tweaks to make working with Gitlab a little better.
+Simple Google Chrome extension which adds some minor tweaks to make working with Gitlab a little easier (for me).
 
 ---
 
@@ -24,10 +24,17 @@ and also a _Checkout_ button on the Merge-Request page to copy the branch name p
 
 ---
 
-## How to install?
+## Installation
+
+### Install via Google Chrome web store
+
+* Open [this link](https://chrome.google.com/webstore/detail/gitlab-git-clone/niofneadkfofccgnfmofgpbppfhbkgmg) to get to the extension page in the Google Chrome web store
+* Click on _Add to chrome_
+
+### Install via _developer mode_
 
 * Download the [zip](https://github.com/pt1602/gitlab-git-clone/archive/refs/heads/main.zip) and unzip it or clone this repo
-* Open [chrome extensions](chrome://extensions/) and enable the developer mode on the top right.
+* Open chrome extensions _chrome://extensions/_ in your browser and enable the developer mode on the top right.
 * Upload the unpacked extension
 
 ---
