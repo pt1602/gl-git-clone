@@ -4,7 +4,7 @@
   "description": "Adds 'git clone' to the ssh/https clone url, so you simply can copy and paste it into your terminal.",
   "main": "./js/frontend.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:js": "tsc"
   },
   "repository": {
     "type": "git",

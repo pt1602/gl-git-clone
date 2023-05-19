@@ -6,7 +6,8 @@
     "content_scripts": [
         {
             "matches": [
-                "https://gitlab.com/*"
+                "https://*/*",
+                "http://*/*"
             ],
             "js": [
                 "js/frontend.js"
@@ -20,5 +21,9 @@
     },
     "action": {
         "default_popup": "default_popup/index.html"
-    }
+    },
+    "options_page": "options_page/index.html",
+    "permissions": [
+        "storage"
+    ]
 }
