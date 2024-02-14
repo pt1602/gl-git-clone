@@ -2,4 +2,5 @@
 @import 'base/_base.css';
 @import 'base/_typography.css';
 @import 'components/_links.css';
+@import 'components/_buttons.css';
 @import 'components/_paragraphs.css';

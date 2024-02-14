@@ -5,19 +5,21 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/pages/_options.css">
     <title>Options</title>
 </head>
 <body>
-<h1>Options</h1>
-
-<label>
-    Url:
-    <input type="text" data-url-input/>
-</label>
-<span>Multiple seperated by comma</span>
-
-<div id="status"></div>
-<button data-save>Save</button>
+<section>
+    <h1>Options</h1>
+    <label>
+        Your gitlab instances:
+        <input type="text" data-url-input/>
+    </label>
+    <p class="info">Multiple seperated by comma</p>
+    <button data-save>Save</button>
+    <div id="status"></div>
+</section>
 <script src="../js/options.js"></script>
 </body>
 </html>
