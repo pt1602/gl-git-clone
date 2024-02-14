@@ -1,0 +1,18 @@
+section {
+    max-width: 43.75rem;
+    margin: 0 auto;
+}
+
+input {
+    margin-left: 0.3125rem;
+}
+
+.info {
+    font-size: 0.625rem;
+    margin-top: 0.375rem;
+    margin-bottom: 1rem;
+}
+
+#status {
+    margin-top: 0.625rem;
+}

@@ -3,6 +3,7 @@
     line-height: 1.25rem;
 }
 
-.paragraph--contribute, .paragraph--issues {
+.paragraph--contribute,
+.paragraph--issues {
     margin: 0.5rem 0;
 }
