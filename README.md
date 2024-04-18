@@ -1,12 +1,12 @@
 [![JavaScript](https://img.shields.io/badge/--blue?logo=javascript&logoColor=fff)](https://www.javascript.com/)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)](https://github.com/pt1602/gitlab-git-clone/graphs/commit-activity)
-[![github forks](https://badgen.net/github/forks/pt1602/gitlab-git-clone/)](https://github.com/pt1602/gitlab-git-clone/network/)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-blue.svg)](https://github.com/pt1602/gl-git-clone/graphs/commit-activity)
+[![github forks](https://badgen.net/github/forks/pt1602/gl-git-clone/)](https://github.com/pt1602/gl-git-clone/network/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)](http://makeapullrequest.com)
-[![github stars](https://img.shields.io/github/stars/pt1602/gitlab-git-clone.svg?style=social&label=Star&maxAge=2592000)](https://github.com/pt1602/gitlab-git-clone/stargazers/)
+[![github stars](https://img.shields.io/github/stars/pt1602/gl-git-clone.svg?style=social&label=Star&maxAge=2592000)](https://github.com/pt1602/gl-git-clone/stargazers/)
 
 ---
 
-# Gitlab "git clone …"
+# GL "git clone …"
 
 Simple Google Chrome extension which adds some minor tweaks to make working with Gitlab a little easier (for me).
 
@@ -16,11 +16,11 @@ Simple Google Chrome extension which adds some minor tweaks to make working with
 
 It adds "git clone" before the repository source.
 
-![Screenshot Git Clone](assets/readme-ressources/gitlab-git-clone.png "Screenshot Git Clone")
+![Screenshot Git Clone](assets/readme-ressources/gl-git-clone.png "Screenshot Git Clone")
 
 and also a _Checkout_ button on the Merge-Request page to copy the branch name plus a _git fetch && git checkout_ before and _git pull_ after it.
 
-![Screenshot Merge Request](assets/readme-ressources/gitlab-merge-request.png "Screenshot Merge Request")
+![Screenshot Merge Request](assets/readme-ressources/gl-merge-request.png "Screenshot Merge Request")
 
 ---
 
@@ -28,12 +28,12 @@ and also a _Checkout_ button on the Merge-Request page to copy the branch name p
 
 ### Install via Google Chrome web store
 
-* Open [this link](https://chrome.google.com/webstore/detail/gitlab-git-clone/niofneadkfofccgnfmofgpbppfhbkgmg) to get to the extension page in the Google Chrome web store
+* Open [this link](https://chrome.google.com/webstore/detail/gl-git-clone/niofneadkfofccgnfmofgpbppfhbkgmg) to get to the extension page in the Google Chrome web store
 * Click on _Add to chrome_
 
 ### Install via _developer mode_
 
-* Download the [zip](https://github.com/pt1602/gitlab-git-clone/archive/refs/heads/main.zip) and unzip it or clone this repo
+* Download the [zip](https://github.com/pt1602/gl-git-clone/archive/refs/heads/main.zip) and unzip it or clone this repo
 * Open chrome extensions _chrome://extensions/_ in your browser and enable the developer mode on the top right.
 * Upload the unpacked extension
 

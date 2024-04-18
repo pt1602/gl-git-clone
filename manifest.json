@@ -1,5 +1,5 @@
 {
-    "name": "Gitlab Git Clone",
+    "name": "GL Git Clone",
     "description": "Adds 'git clone' to the ssh/https clone url, so you simply can copy and paste it into your terminal.",
     "version": "1.6",
     "manifest_version": 3,
@@ -15,9 +15,9 @@
         }
     ],
     "icons": {
-        "16": "assets/icons/gitlab-git-clone-logo16x.png",
-        "48": "assets/icons/gitlab-git-clone-logo48x.png",
-        "128": "assets/icons/gitlab-git-clone-logo.png"
+        "16": "assets/icons/gl-git-clone-logo16x.png",
+        "48": "assets/icons/gl-git-clone-logo48x.png",
+        "128": "assets/icons/gl-git-clone-logo.png"
     },
     "action": {
         "default_popup": "default_popup/index.html"
