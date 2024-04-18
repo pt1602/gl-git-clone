@@ -1,6 +1,6 @@
 {
-    "name": "gitlab-gitclone",
-    "version": "1.6.0",
+    "name": "gl-gitclone",
+    "version": "1.6.1",
     "description": "Adds 'git clone' to the ssh/https clone url, so you simply can copy and paste it into your terminal.",
     "main": "./js/frontend.js",
     "scripts": {
@@ -11,17 +11,17 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pt1602/gitlab-git-clone.git"
+        "url": "git+https://github.com/pt1602/gl-git-clone.git"
     },
     "keywords": [
-        "gitlab"
+        "gl git clone"
     ],
     "author": "Philipp Tuchardt",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/pt1602/gitlab-git-clone/issues"
+        "url": "https://github.com/pt1602/gl-git-clone/issues"
     },
-    "homepage": "https://github.com/pt1602/gitlab-git-clone#readme",
+    "homepage": "https://github.com/pt1602/gl-git-clone#readme",
     "devDependencies": {
         "prettier": "^3.2.5",
         "typescript": "^4.8.2"
