@@ -7,7 +7,11 @@
         "compile:js": "tsc",
         "prettier:css": "npx prettier --write assets/css",
         "prettier:ts": "npx prettier --write ts",
-        "prettier": "npm run prettier:css && npm run prettier:ts"
+        "prettier": "npm run prettier:css && npm run prettier:ts",
+        "uglify:frontend": "npx uglifyjs js/frontend.js -cmo js/frontend.js",
+        "uglify:options": "npx uglifyjs js/options.js -cmo js/options.js",
+        "uglify": "npm run uglify:frontend && npm run uglify:options",
+        "build": "npm run compile:js && npm run prettier && npm run uglify"
     },
     "repository": {
         "type": "git",
@@ -24,7 +28,8 @@
     "homepage": "https://github.com/pt1602/gl-git-clone#readme",
     "devDependencies": {
         "prettier": "^3.2.5",
-        "typescript": "^4.8.2"
+        "typescript": "^4.8.2",
+        "uglify-js": "^3.18.0"
     },
     "prettier": {
         "trailingComma": "es5",
