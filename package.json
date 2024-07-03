@@ -1,6 +1,6 @@
 {
     "name": "gl-gitclone",
-    "version": "1.6.1",
+    "version": "2.0.0",
     "description": "Adds 'git clone' to the ssh/https clone url, so you simply can copy and paste it into your terminal.",
     "main": "./js/frontend.js",
     "scripts": {
