@@ -12,33 +12,42 @@ chrome.storage.sync.get(['url']).then((result) => {
 
     urls.forEach((url: string) => {
         if (url === window.location.host) {
-            let cloneButtons: NodeList | null = document.querySelectorAll('#ssh_project_clone, #http_project_clone')
+            let cloneButtons: NodeList | null = document.querySelectorAll(
+                '[data-testid="copy-ssh-url-button"], [data-testid="copy-http-url-button"]'
+            )
+            let cloneInputs: NodeList | null = document.querySelectorAll('#copy-ssh-url-input, #copy-http-url-input')
             let cloneOptionsDropdown: NodeList | null = document.querySelectorAll('.clone-options-dropdown > li > a')
             let mobileCloneButtons: HTMLElement | null = document.querySelector('.mobile-git-clone .clone-dropdown-btn')
+            let mobileDropdownValues: NodeListOf<HTMLSpanElement> = document.querySelectorAll('.dropdown-menu-inner-content')
             const currentPath: string = window.location.pathname
             const beforeVal: string = 'git clone '
             const copyNameBtnVal: string = 'Checkout'
-            const copyNameBtnClasses: string = 'gl-display-none gl-md-display-block btn gl-button btn-default gl-mr-3'
+            const copyNameBtnClasses: string = 'gl-hidden md:gl-block btn gl-button btn-default gl-mr-3'
             let branchNameEl: HTMLElement | null
 
-            function modifyMobileCloneButtons() {
+            function modifyMobileView() {
                 ;(mobileCloneButtons! as HTMLInputElement).dataset.clipboardText =
                     beforeVal + (mobileCloneButtons! as HTMLInputElement).dataset.clipboardText
+
+                mobileDropdownValues.forEach((item) => {
+                    item.innerText = beforeVal + item.innerText
+                })
             }
 
             function createCopyBranchNameButton(branchNameEl: HTMLElement) {
                 const headerActions: HTMLElement | null = document.querySelector('.detail-page-header-actions')
-                const branchName: string = branchNameEl.innerHTML
                 let cloneBranchNameBtn: HTMLElement | null = document.createElement('button')
                 cloneBranchNameBtn.className = copyNameBtnClasses
                 cloneBranchNameBtn.innerText = copyNameBtnVal
 
-                if (branchName) {
+                if (branchNameEl) {
                     cloneBranchNameBtn.addEventListener('click', () => {
-                        navigator.clipboard.writeText('git fetch && git checkout ' + branchName + ' && git pull').then(
-                            () => {},
-                            () => {}
-                        )
+                        navigator.clipboard
+                            .writeText('git fetch && git checkout ' + branchNameEl.dataset.clipboardText + ' && git pull')
+                            .then(
+                                () => {},
+                                () => {}
+                            )
                     })
                 }
 
@@ -49,7 +58,7 @@ chrome.storage.sync.get(['url']).then((result) => {
 
             if (currentPath.includes('merge_requests/')) {
                 let checkInterval = window.setInterval(() => {
-                    branchNameEl = document.querySelector('.label-branch a')
+                    branchNameEl = document.querySelector('.merge-request-details .btn-default-tertiary')
 
                     if (branchNameEl) {
                         createCopyBranchNameButton(branchNameEl)
@@ -59,15 +68,20 @@ chrome.storage.sync.get(['url']).then((result) => {
             }
 
             try {
-                cloneButtons.forEach(function (item) {
+                cloneButtons.forEach((item) => {
+                    const currentVal = (item as HTMLButtonElement).dataset.clipboardText
+                    ;(item as HTMLButtonElement).setAttribute('data-clipboard-text', beforeVal + currentVal)
+                })
+
+                cloneInputs.forEach((item) => {
                     ;(item as HTMLInputElement).value = beforeVal + (item as HTMLInputElement).value
                 })
 
                 cloneOptionsDropdown.forEach((item) => {
-                    item.addEventListener('click', modifyMobileCloneButtons)
+                    item.addEventListener('click', modifyMobileView)
                 })
 
-                modifyMobileCloneButtons()
+                modifyMobileView()
             } catch (err) {}
         }
     })

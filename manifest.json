@@ -1,7 +1,7 @@
 {
     "name": "GL Git Clone",
     "description": "Adds 'git clone' to the ssh/https clone url, so you simply can copy and paste it into your terminal.",
-    "version": "1.6",
+    "version": "2.0.0",
     "manifest_version": 3,
     "content_scripts": [
         {
